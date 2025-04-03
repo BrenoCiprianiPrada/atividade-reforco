@@ -1,6 +1,6 @@
 import { MaterialLeitura } from "./MaterialLeitura";
 
-class Livro implements MaterialLeitura{
+export class Livro implements MaterialLeitura{
     autor: string;
     titulo: string;
     numeroPagina : number;

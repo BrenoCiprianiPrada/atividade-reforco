@@ -1,6 +1,6 @@
 import { MaterialLeitura } from "./MaterialLeitura";
 
-class Revista implements MaterialLeitura{
+export class Revista implements MaterialLeitura{
     autor: string;
     titulo: string;
     edicao : number;
@@ -11,7 +11,7 @@ class Revista implements MaterialLeitura{
         this.edicao = edicao;
     }
     exibirDetalhes(): void {
-        console.log(`autor: ${this.autor}, titulo: ${this.titulo}, numero de paginas: ${this.edicao}, `);
+        console.log(`autor: ${this.autor}, titulo: ${this.titulo}, edição: ${this.edicao}, `);
     }
 
 }
